@@ -37,6 +37,15 @@ export default function App({Component, pageProps}: AppProps) {
                 >
                     Recharts
                 </Link>
+
+                <Link
+                    className={classnames('nav-item', {
+                        isActive: pathname === '/Nivo',
+                    })}
+                    href="/Nivo"
+                >
+                    Nivo
+                </Link>
             </div>
 
             <Component {...pageProps} />
