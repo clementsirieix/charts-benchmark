@@ -46,6 +46,15 @@ export default function App({Component, pageProps}: AppProps) {
                 >
                     Nivo
                 </Link>
+
+                <Link
+                    className={classnames('nav-item', {
+                        isActive: pathname === '/Highcharts',
+                    })}
+                    href="/Highcharts"
+                >
+                    Highcharts
+                </Link>
             </div>
 
             <Component {...pageProps} />
